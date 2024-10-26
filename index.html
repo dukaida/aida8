@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reducción del margen derecho e izquierdo */
+        body {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+
+        /* Estilo para los botones Animate */
+        .btn-animate {
+            background-color: orangered;
+            color: white;
+            border: none;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn-animate:hover {
+            background-color: darkorange;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <header style="margin: 20px !important;">
+        <h1>Cinelandia</h1>
+        <h4>[el site de cine más minimalista y disruptivo de la red - nos distinguimos por la calidad de nuestros contenidos]</h4>
+        <nav>
+            <a href="#ataque">al ataque</a>
+            <a href="#ultimo">lo último</a>
+            <a href="#servicios">servicios</a>
+            <a href="#estamos">aquí estamos</a>
+            <a href="#contactForm">contacto</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <aside class="aside">
+                <h2>Próximamente</h2>
+                <br>
+                <article>
+                <p><i class="fas fa-video"></i> Llevamos el cine a tu barrio, sociedad de fomento, club social ...</p>
+                <p>Contáctanos y harás feliz a uno de nuestros ejecutivos.</p>
+                <p>Estamos ansiosos de llevar el cine a todas partes y de hacer feliz a la gente.</p>
+                </article>
+                <br>
+                <article>
+                <p><i class="fas fa-video"></i> Querés ser crítico amateur de cine ... no te desesperes</p>
+                <p>Muy pronto abriremos nuestro primer curso presencial en nuestra sede de Avda Asamblea 912.</p>
+                <p>Donde participaran afamados críticos argentinos.</p>
+                </article>
+                <br>
+                <article>
+                <p><i class="fas fa-video"></i> No pertenecés a ningún cine club?</p>
+                <p>Pronto tendrás la posibilidad de asociarte al mejor.</p>
+                </article>
+                <br>
+                <h2>Contacto</h2>
+                <form id="contactForm" action="https://formspree.io/f/xzzbpwrz" method="POST">
+                    <label>
+                        Tu correo electrónico:
+                        <input type="email" name="email" required>
+                    </label>
+                    <br><br>
+                    <label>
+                        Tu mensaje:
+                        <textarea name="message" required></textarea>
+                    </label>
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                    <button type="button" onclick="limpiarContacto()">Limpiar</button> <!-- Nuevo botón para limpiar -->
+                </form>
+                
+            </aside>
+            <div class="content">
+                <div class="box">
+                    <section id="ataque">
+                        <h2 style="color: orangered">Cinéfilos al ataque !!!</h2>
+                        <p>Nuestra pasión por el cine se derrama, no tiene fronteras.</p>
+                        <p>Ayúdanos a expandirlas</p>
+                        <br>
+                        <h3 style="color:rgb(57, 225, 24);"><i class="fas fa-video"></i> HISTORIA VISUAL DE LA INDUSTRIA</h3>
+                        <h3 style="color:rgb(57, 225, 24);"><i class="fas fa-video"></i> BREVE HISTORIA VISUAL DEL CINE ARGENTINO</h3>
+                        <h3 style="color:rgb(57, 225, 24);"><i class="fas fa-video"></i> LAS VENTAJAS DE VER CINE</h3>
+                        <br>
+                        <button class="btn-animate" onclick="window.location.href='cinefilosAlAtaque.html'">Animate</button>
+                    </section>
+                </div>
+                <div class="box">
+                    <section id="ultimo">
+                        <h2 style="color: orangered">Lo último de la industria</h2>
+                            <p>Si no está en este sitio es porque no sucedió ...</p>
+                            <br>
+                            <h3 style="color:rgb(57, 225, 24);"><i class="fas fa-video"></i> NOVEDADES</h3>
+                            <h3 style="color:rgb(57, 225, 24);"><i class="fas fa-video"></i> ESTRENOS</h3>
+                            <h3 style="color:rgb(57, 225, 24);"><i class="fas fa-video"></i> TECNOLOGIA</h3>
+                            <br>
+                            <button class="btn-animate" onclick="window.location.href='https://www.sensacine.com/peliculas/noticias/'">Animate</button>
+                    </section>
+                </div>
+                <div class="box">
+                    <section id="servicios">
+                        <article>
+                            <h2 style="color: orangered">Nuestros Servicios</h2>
+                            
+                            <h3><i class="fas fa-video"></i> Vota tu película favorita</h3>
+                            <p>Eso nos ayudará a alimentar a nuestra AI y tener nuestro propio ranking argento.</p>
+                            <button class="btn-animate" onclick="window.location.href='ranking.html'">Animate</button>
+                            
+                            <h3><i class="fas fa-video"></i> AICINE</h3>
+                            <p>Próximamente ... completando una serie de parámetros recomendamos tu película a tu medida</p>
+                            <p>Cuanto más precisa sea la información que nos brindes, más acertada sera nuestra recomendación</p>
+                            <button class="btn-animate" onclick="window.location.href='recomendacion.html'">Animate</button>
+                            
+                            <h3><i class="fas fa-video"></i> EnjoyMovies</h3>
+                            <p>Animamos tu Reunión Empresarial - de Amigos - Familiar | Evento | Fiesta.</p>
+                            <p>Date una vuelta por nuestro Showroom sito en Avda Asamblea 912, donde podrás apreciar lo último en entretenimientos referidos al sector.</p>
+                        </article>
+                    </section>
+                </div>
+                <div class="boxx" id="estamos">
+                    <h2 style="color: orangered">Somos de carne y hueso ...</h2>
+                        <br>
+                        <div class="map-container">
+                            <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.77505608962!2d-58.43996642459387!3d-34.635124372943125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbb51de5b883%3A0x257a7278617e67d5!2sAv.%20Asamblea%20900%2C%20C1424%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1728828559040!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                <div class="map-container">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="margin-right: 20px !important;">
+        <div class="footer-container">
+            <!-- Sección de contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Teléfono: +1 234 567 890</p>
+                <p>Email: cinelandia@gmail.com</p>
+                <p>Dirección: Avda Asamblea 912, CABA, Argentina</p>
+            </div>
+    
+            <!-- Enlaces rápidos -->
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-nav">
+                    <li><a href="#ataque">al ataque</a></li>
+                    <li><a href="#ultimo">lo último</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#estamos">aquí estamos</a></li>
+                    <li><a href="#contactForm">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <!-- Redes sociales -->
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="ins.jpeg" alt="Instagram"></a>
+                    <a href="#"><img src="lin.jpg" alt="LinkedIn"></a>
+                    <a href="#"><img src="face.jpg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Cinelandia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function limpiarContacto() {
+            document.getElementById("contactForm").reset();
+        }
+    </script>
+</body> 
+</html>
